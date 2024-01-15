@@ -1,0 +1,27 @@
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+
+    private Spinner unitFromSpinner, unitToSpinner;
+    private EditText inputValue;
+    private Button convertButton;
+    private TextView resultText;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        unitFromSpinner = findViewById(R.id.unitFromSpinner);
+        unitToSpinner = findViewById(R.id.unitToSpinner);
+        inputValue = findViewById(R.id.inputValue);
+        convertButton = findViewById(R.id.convertButton);
+        resultText = findViewById(R.id
