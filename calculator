@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>MyCalculator</title>
+        <link rel="stylesheet" href="cal.css"/>
+    </head>
+    <body>
+        <div id="container">
+            <div id="display">Enter number</div>
+            <div id="miniDisplay">&nbsp;</div>
+            <button class="fn" onclick="input('&Sqrt;(','Math.sqrt(')">&Sqrt;</button>
+            <button class="fn" onclick="input('&sup2;','**2')">x&sup2;</button>
+            <button class="fn" onclick="input('sin(','Math.sin(Math.PI/180*')">sin</button>
+            <button class="fn" onclick="input('cos(','Math.cos(Math.PI/180*')">cos</button>
+            <button class="fn" onclick="input('tan(','Math.tan(Math.PI/180*')">tan</button>
+            <button id="backsps" onclick="backspace()">AC</button>
+            <button onclick="input('(')">(</button>
+            <button onclick="input(')')">)</button>
+            <button onclick="input('+')">+</button>
+            <button onclick="input('7')">7</button>
+            <button onclick="input('8')">8</button>
+            <button onclick="input('9')">9</button>
+            <button onclick="input('-')">-</button>
+            <button onclick="input('4')">4</button>
+            <button onclick="input('5')">5</button>
+            <button onclick="input('6')">6</button>
+            <button onclick="input('&times;','*')">&times;</button>
+            <button onclick="input('1')">1</button>
+            <button onclick="input('2')">2</button>
+            <button onclick="input('3')">3</button>
+            <button onclick="input('&div;','/')">&div;</button>
+            <button onclick="input('0')">0 </button>
+            <button onclick="input('.')">.</button>
+            <button onclick="input('%','/100')">%</button>
+            <button id="equal" onclick="getAns()">=</button>
+        </div>
+        <script src="cal.js"></script>
+    </body>
+</html>
